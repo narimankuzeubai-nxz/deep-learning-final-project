@@ -1,34 +1,35 @@
-Week 1 Report: Dataset Selection, Repository Setup and Exploratory Data Analysis (EDA)
-Goals and Completed Tasks:
-Dataset Selection:
-The dataset chosen for the project is the Spam Emails dataset, available on Kaggle (Spam Emails Dataset).
-The dataset consists of email text messages classified as Spam or Non-Spam (Ham).
-This dataset is suitable for text classification tasks, which is the focus of the project, and it provides a practical example of applying deep learning to text data.
+Week 1: Dataset Selection and Exploration
+1. Work Completed This Week
 
-Repository Setup:
+This week, I selected and explored the SMS Spam Classification dataset.
+The dataset contains 5572 SMS messages with two columns:
 
-Exploratory Data Analysis (EDA):
-Performed an initial exploration of the dataset to understand its structure:
-Message: The text of the email.
-Category: The label indicating whether the email is Spam or Non-Spam.
-Checked for missing values or anomalies in the dataset. No missing values were found.
-Observed the class distribution: the dataset is imbalanced, with more Non-Spam emails than Spam emails. This could affect model performance, especially for the minority class (Spam).
-Identified the need for data preprocessing, including text tokenization and label encoding.
+Category: shows if a message is "spam" or "ham"
+Message: the text content of the SMS
 
-Creation of README File:
-The README.md file was created with the following key information:
-A description of the project (Spam vs. Non-Spam email classification).
-The source and details of the dataset.
-Overview of the steps that will be undertaken in the project.
-Information on the methods and technologies to be used.
+I loaded the dataset using pandas and checked its structure, size, and basic information.
 
-Plan for Next Week:
-Data Preprocessing:
-Tokenize the email text and convert it into a vector representation (e.g., using TF-IDF or Word Embeddings).
-Convert the Category labels (Spam, Non-Spam) into binary format.
-Split the data into training, validation, and test sets.
-Baseline Model Implementation:
-Implement a simple neural network model (e.g., MLP) for binary classification of Spam and Non-Spam emails.
-Evaluate the model's performance using basic accuracy metrics.
-Documentation of Progress:
-Prepare the second-week report, outlining the steps taken for data preprocessing and the initial model implementation.
+2. Dataset Description
+
+The dataset is a real-world SMS spam collection dataset.
+It is used for text classification tasks.
+
+Total samples: 5572 messages
+Features: 2 columns (Category, Message)
+Task type: Binary text classification
+Output: spam or ham
+3. Exploratory Data Analysis (EDA)
+
+I performed basic data exploration:
+
+Checked number of rows and columns
+Checked for missing values (none found)
+Analyzed class distribution (spam vs ham)
+Observed that the dataset is imbalanced (more ham than spam)
+4. Data Understanding
+The input data is text (SMS messages)
+The output labels are categorical:
+"ham" = normal message
+"spam" = unwanted message
+
+This dataset is suitable for Natural Language Processing (NLP) and deep learning models like LSTM or GRU.
